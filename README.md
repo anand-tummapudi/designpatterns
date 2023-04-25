@@ -2,4 +2,4 @@
 
 # Creational Patterns
 1. Factory Pattern
-2. Single Pattern
+2. Singleton Pattern
