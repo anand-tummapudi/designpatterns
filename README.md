@@ -1,7 +1,6 @@
-## title {.tabset .tabset-fade} 
-#Describing the implementation various design patterns
+#Design patterns
 
-## tab Creational Patterns
+## Creational Patterns
 #### 1. Factory Pattern
 #### 2. Singleton Pattern
 ###### Bill Dugh Implementation :
@@ -10,6 +9,6 @@ Using which we create an inner class in side single ton class and return the ins
 ###### Using Reflection to destroy Singleton: 
 Using reflection API, we can retrieve all the constructors of Singleton class. Set the visibility of constructor to true. Then get the new instance from the constructor and typecast the object to Singleton. In this case multiple objects of the singleton class wouldbe created. *If we create singleton using Enum, then it would be difficult to break it using reflection.*
 
-## tab Structural Patterns
+## Structural Patterns
 
-## tab Behavioural Patterns
+## Behavioural Patterns
