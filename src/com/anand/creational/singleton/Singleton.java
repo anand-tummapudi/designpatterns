@@ -1,6 +1,8 @@
 package com.anand.creational.singleton;
 
-public class Singleton {
+import java.io.Serializable;
+
+public class Singleton implements Serializable{
 	
 	//private static final Singleton objInstance = new Singleton();
 	/* 
@@ -52,5 +54,8 @@ public class Singleton {
 		 }
 		  return objInstance; 
 	 }
-
+	
+	private Object readResolve() {
+		return getInstance();
+	}
 }
