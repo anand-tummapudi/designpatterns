@@ -4,6 +4,17 @@
 
 #### 1. Factory Pattern
 Factory design pattern is used when we have a super class with multiple sub classes and based on input, we ned to return one of the sub-class object.
+Using factory pattern we can code for interface ratherthan implementation.
+Extension of more different implementations in future is very easy.
+###### Examples of Factory pattern implementations in JDK:
+java.util.Calendar - getInstance() 
+java.util.ResourceBundle - getBundle()
+java.util.EnumSet - of()
+java.sql.DriverManager - getConnection()
+java.net.URL - openConnection()
+java.lang.Class - newInstance()
+java.lang.class - forName()
+
 
 #### 2. Singleton Pattern
 ###### Bill Dugh Implementation :
@@ -23,7 +34,7 @@ Using reflection API, we can retrieve all the constructors of Singleton class. S
  ###### Cloning breaks Singleton:
   If we implement Clonable interface with Singleton and override the clone() method, then while cloning the existing object it breaks singleton property. So inside the clone method, if we throw the exception instead of returning the object, it prevents from cloning the singleton object.
 
-###### Examples of Singleton built in classes in Java:
+###### Examples of Singleton built in classes in JDK:
 java.lang.Runtime class
 java.awt.Desktop
 java.lang.System
