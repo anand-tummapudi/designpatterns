@@ -7,13 +7,13 @@ Factory design pattern is used when we have a super class with multiple sub clas
 Using factory pattern we can code for interface ratherthan implementation.
 Extension of more different implementations in future is very easy.
 ###### Examples of Factory pattern implementations in JDK:
-java.util.Calendar - getInstance() 
-java.util.ResourceBundle - getBundle()
-java.util.EnumSet - of()
-java.sql.DriverManager - getConnection()
-java.net.URL - openConnection()
-java.lang.Class - newInstance()
-java.lang.class - forName()
+*java.util.Calendar - getInstance() 
+*java.util.ResourceBundle - getBundle()
+*java.util.EnumSet - of()
+*java.sql.DriverManager - getConnection()
+*java.net.URL - openConnection()
+*java.lang.Class - newInstance()
+*java.lang.class - forName()
 
 
 #### 2. Singleton Pattern
@@ -35,14 +35,13 @@ Using reflection API, we can retrieve all the constructors of Singleton class. S
   If we implement Clonable interface with Singleton and override the clone() method, then while cloning the existing object it breaks singleton property. So inside the clone method, if we throw the exception instead of returning the object, it prevents from cloning the singleton object.
 
 ###### Examples of Singleton built in classes in JDK:
-java.lang.Runtime class
-java.awt.Desktop
-java.lang.System
-Logging - Loggers are always singleton.
-Caching - Caching also implemented with singleton.
-Threadpool - Threadpool is also implemented using singleton.
+*java.lang.Runtime class
+*java.awt.Desktop
+*java.lang.System
+*Logging - Loggers are always singleton.
+*Caching - Caching also implemented with singleton.
+*Threadpool - Threadpool is also implemented using singleton.
   
-
 ## Structural Patterns
 
 ## Behavioural Patterns
