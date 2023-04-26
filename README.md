@@ -13,6 +13,10 @@ Using reflection API, we can retrieve all the constructors of Singleton class. S
  public enum SingletonEnum{
 	GETINSTANCE;
  }
+ 
+ ###### Serialization breaks singleton:
+  If we serialize the singleton object and deserialize the same then also it breaks.
+  So we need to override readResolve() method in our singleton class. Return the object from the read resolve method.
 
 ## Structural Patterns
 
