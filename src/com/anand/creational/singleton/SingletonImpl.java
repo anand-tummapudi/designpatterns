@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 
 public class SingletonImpl {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
 		/*
 		 * Singleton obj1 = Singleton.getInstance(); Singleton obj2 =
@@ -57,6 +57,9 @@ public class SingletonImpl {
 		Singleton obj1 = Singleton.getInstance();
 		Singleton obj2 = null;
 		
+		// Object for cloning the Singleton object 
+		Singleton obj3 = (Singleton)obj1.clone();
+		
 		ObjectOutput objectOutput = null;
 		try {
 			objectOutput = new ObjectOutputStream(new FileOutputStream("singleton.ser"));
@@ -90,6 +93,7 @@ public class SingletonImpl {
 		 
 		System.out.println(obj1.hashCode());
 		System.out.println(obj2.hashCode());
+		System.out.println(obj3.hashCode());
 		
 	}
 

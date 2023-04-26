@@ -17,6 +17,9 @@ Using reflection API, we can retrieve all the constructors of Singleton class. S
  ###### Serialization breaks singleton:
   If we serialize the singleton object and deserialize the same then also it breaks.
   So we need to override readResolve() method in our singleton class. Return the object from the read resolve method.
+ 
+ ###### Cloning breaks Singleton:
+  If we implement Clonable interface with Singleton and override the clone() method, then while cloning the existing object it breaks singleton property. So inside the clone method, if we throw the exception instead of returning the object, it prevents from cloning the singleton object. 
 
 ## Structural Patterns
 

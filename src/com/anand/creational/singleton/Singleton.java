@@ -2,8 +2,12 @@ package com.anand.creational.singleton;
 
 import java.io.Serializable;
 
-public class Singleton implements Serializable{
+public class Singleton implements Serializable, Cloneable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	//private static final Singleton objInstance = new Singleton();
 	/* 
 	 * This Above is eager initialization and it occurs even if the class doesn't use the object 
@@ -54,6 +58,11 @@ public class Singleton implements Serializable{
 		 }
 		  return objInstance; 
 	 }
+	
+	public Object clone() throws CloneNotSupportedException {
+		//return super.clone();
+		throw new CloneNotSupportedException("You can't clone Singleton Object.");
+	}
 	
 	private Object readResolve() {
 		return getInstance();
