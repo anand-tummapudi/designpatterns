@@ -43,7 +43,7 @@ Using reflection API, we can retrieve all the constructors of Singleton class. S
 * Threadpool - Threadpool is also implemented using singleton.
 
 #### 3. Builder Pattern
-There are three major issues with Factory pattern and Abstract factory pattern when the object contains a lot of attributes. We need to pass many arguments, need to maintain the order of orguments to pass and manage arguments from client. We will have all setter methods and have a build method to build the object.
+There are issues with Factory pattern and Abstract factory patterns, when the object contains a lot of attributes. We need to pass many arguments, need to maintain the order of arguments to pass and manage arguments from client. Builder pattern, maintains a private constructor and a builder static inner class with common arguments and optional arguments setters. It returns the builder factor object and contains a build method which returns the actual object with builder argument. In the private constructor of actual class we have the builder argument, which forms the required object with the required parameters.
   
 ## Structural Patterns
 
