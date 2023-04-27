@@ -41,6 +41,9 @@ Using reflection API, we can retrieve all the constructors of Singleton class. S
 * Logging - Loggers are always singleton.
 * Caching - Caching also implemented with singleton.
 * Threadpool - Threadpool is also implemented using singleton.
+
+#### 3. Builder Pattern
+###### There are three major issues with Factory pattern and Abstract factory pattern when the object contains a lot of attributes. We need to pass many arguments, need to maintain the order of orguments to pass and manage arguments from client. We will have all setter methods and have a build method to build the object.
   
 ## Structural Patterns
 
