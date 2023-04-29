@@ -2,7 +2,7 @@
 
 ## Creational Patterns
 Deals with the creation of objects.
-* Factory, Abstract Factory, Singleton, Builder, Prototype
+* Factory, Abstract Factory, Singleton, Builder, Prototype.
 #### 1. Factory Pattern
 Factory design pattern is used when we have a super class with multiple sub classes and based on input, we ned to return one of the sub-class object.
 Using factory pattern we can code for interface ratherthan implementation.
@@ -52,13 +52,19 @@ This is similar to Factory Pattern and it gives Factory of factories. It allows 
   
 ## Structural Patterns
 Deals with the relationship between objects. These patterns ease the design by identifying a simple way to realize relationship between objects. It also describes how classes and objects form larger structures.
-* Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
+* Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy.
 #### 1. Adaptor Pattern
 Adaptor match interfaces of different classes meaning that it allows two incompatable interfaces to work together.
+* java.util.Arrays - asList()
+* java.io.InputStreamReader 
+* java.io.OutputStreamWriter
+* javax.xml.bind.annotation.adaptors.XMLAdaptor - marshall() 
 #### 2. Bridge Pattern
 Bridge separates an object's interface from its implementation.It uses encapsulation, aggregation and can use inheritance to separate responsibilities. Bridge pattern is useful when we want to avoid permanent binding between abstraction and its implementation. 
 #### 3. Composite Pattern 
 Composite is a tree structure of simple and composite objects. It enables us to create hierarchical tree structures of varying complexity. Here group of objects are treated in the same way as a single instance of an object.
+* java.awt.Container - add(Component)(Swing)
+* javax.faces.component.UIComponent - getChilden(JSF)
 #### 4. Decorator Pattern 
 Decorator adds responses to objects dynamically.
 #### 5. Facade Pattern 
@@ -66,8 +72,11 @@ Facade is a single class that represents an entire subsystem. This pattern provi
 #### 6. Flyweight Pattern 
 Flyweight is a fine grained instance used for efficient sharing. It focuses on sharing for efficiency. This pattern is useful when the application uses large number of objects and the storage cost is very high.
 #### 7. Proxy Pattern  
-Proxy is an object representing another object. It provides a placeholder or substitute object to control access to the original object.
-Remote proxy and Virtual proxy are some of the implementations of proxydesign pattern.
+Proxy is an object representing another object. It provides a placeholder or substitute object to control access to the original object. This attern is used, when the obect creation is very expensive. The actual object creation will be done only once and the proxy object will do the magic for the subsequent requests. Remote proxy and Virtual proxy are some of the implementations of proxy design pattern.
+* java.lang.reflect.Proxy
+* java.rmi.*
+* javax.ejb.EJB
+* javax.persistence.PersistenceContext
  
 ## Behavioural Patterns
 Deals with the interaction or communication between objects.
