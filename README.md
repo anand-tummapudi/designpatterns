@@ -60,15 +60,23 @@ Adaptor match interfaces of different classes meaning that it allows two incompa
 * java.io.OutputStreamWriter
 * javax.xml.bind.annotation.adaptors.XMLAdaptor - marshall() 
 #### 2. Bridge Pattern
-Bridge separates an object's interface from its implementation.It uses encapsulation, aggregation and can use inheritance to separate responsibilities. Bridge pattern is useful when we want to avoid permanent binding between abstraction and its implementation. 
+Bridge separates an object's interface from its implementation.It uses encapsulation, aggregation and can use inheritance to separate responsibilities. Bridge pattern is useful when we want to avoid permanent binding between abstraction and its implementation. This pattern promotes compisition over inheritance.
+ 
 #### 3. Composite Pattern 
 Composite is a tree structure of simple and composite objects. It enables us to create hierarchical tree structures of varying complexity. Here group of objects are treated in the same way as a single instance of an object.
 * java.awt.Container - add(Component)(Swing)
 * javax.faces.component.UIComponent - getChilden(JSF)
 #### 4. Decorator Pattern 
-Decorator adds responses to objects dynamically.
+Decorator adds responses to objects dynamically. It is used to modify the functionality of objects at runtime. Other instances of the same class will not be affected by this. This pattern uses abstract classes or interfaces with the compisition to implement the wrapper.
+* java.io package - FileReader, Buffered Reader, BufferedInputStream etc.
+* java.util.Collections - synchronizedXXX(),unmodifiableXXX() methods.
+* javax.servlet.http.HttpServletRequestWrapper and HttpServletResponseWrapper
+
 #### 5. Facade Pattern 
 Facade is a single class that represents an entire subsystem. This pattern provides an unified interface from a group of subsystems. It reduces coupling between subsystems.
+Facade pattern should be applied for similar kind of interfaces, its purpose is to provide a single interface rather than multiple interfaces that does the similar kind of job.
+* javax.faces.contaxt.FacesContext
+* javax.faces.context.ExternalContext 
 #### 6. Flyweight Pattern 
 Flyweight is a fine grained instance used for efficient sharing. It focuses on sharing for efficiency. This pattern is useful when the application uses large number of objects and the storage cost is very high.
 #### 7. Proxy Pattern  

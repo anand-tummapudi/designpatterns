@@ -23,7 +23,6 @@ public class FacadeClient {
 		reportfacade.generateHTMLReport(connetion, tableName);
 		reportfacade.generateExcelReport(connetion, tableName);
 		
-		
 	}
 
 }
