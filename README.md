@@ -61,7 +61,6 @@ Adaptor match interfaces of different classes meaning that it allows two incompa
 * javax.xml.bind.annotation.adaptors.XMLAdaptor - marshall() 
 #### 2. Bridge Pattern
 Bridge separates an object's interface from its implementation.It uses encapsulation, aggregation and can use inheritance to separate responsibilities. Bridge pattern is useful when we want to avoid permanent binding between abstraction and its implementation. This pattern promotes compisition over inheritance.
- 
 #### 3. Composite Pattern 
 Composite is a tree structure of simple and composite objects. It enables us to create hierarchical tree structures of varying complexity. Here group of objects are treated in the same way as a single instance of an object.
 * java.awt.Container - add(Component)(Swing)
@@ -71,7 +70,6 @@ Decorator adds responses to objects dynamically. It is used to modify the functi
 * java.io package - FileReader, Buffered Reader, BufferedInputStream etc.
 * java.util.Collections - synchronizedXXX(),unmodifiableXXX() methods.
 * javax.servlet.http.HttpServletRequestWrapper and HttpServletResponseWrapper
-
 #### 5. Facade Pattern 
 Facade is a single class that represents an entire subsystem. This pattern provides an unified interface from a group of subsystems. It reduces coupling between subsystems.
 Facade pattern should be applied for similar kind of interfaces, its purpose is to provide a single interface rather than multiple interfaces that does the similar kind of job.
@@ -86,5 +84,16 @@ Proxy is an object representing another object. It provides a placeholder or sub
 * javax.ejb.EJB
 * javax.persistence.PersistenceContext
  
-## Behavioural Patterns
-Deals with the interaction or communication between objects.
+## Behavioral Patterns
+Deals with the interaction or communication between objects. The two objects are talking to each other but still loosely coupled. The loose coupling is the key to n-tier architecture.
+* Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer (Publisher/Subscriber), State, Strategy, Template method, Visitor, Null Object.
+#### 1. Iterator Pattern 
+Iterator pattern is used to access the elements of a collection object on sequential manner without any need to know its underlying representation.
+#### 2. Template Method Pattern 
+This patterns is used to create a method stub and that differs some of the steps of implementation to the subclasses. It defines the steps to execute an algorithm and it can provide default implementation that might be common for all or some of the subclasses.
+* java.io package - all non abstract methods of java.io.InputStream, java.io.OutputStream, java.io.Reader and java.io.Writer
+* All non-abstract methods of java.util.AbstractList, java.util.AbstractSet and java.util.AbstractMap
+* javax.servlet.http.HttpServlet all doXXX methods 
+* Spring Framework - JdbcTemplate, HibernateTemplate, JmsTemplate, RestTemplate, SimpleJdbcTemplate, TransactionTemplate
+#### 3. Mediator Pattern 
+This pattern deals with the behaviors of objects. It is used to provide centralized communication medium between different objects in a system. Mediator pattern is used when the communication logic between objects is complex. We can have a central point of communication that takes care of communication logic.
