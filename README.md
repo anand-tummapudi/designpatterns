@@ -110,3 +110,7 @@ In this pattern client doesn't know which part of chain will be processing the r
 This pattern is used when we have multiple algorithms for a specific task and client decides the actual implementation to be used at run time. Strategy patterns is also known as policy pattern.
 * Collections.sort()
 * javax.servlet.http.HttpServlet - service() and doXXX() methods
+#### 6. State design pattern
+This pattern is used when an object changes its behavior based on its internal state. The benefit of using state pattern is to implement polymorphic behavior. So that our code will be more robust and easily maintainable.
+#### 7. Visitor design pattern
+This pattern is used when we have to perform an operation on a group of similar kind of objects. With the help of visitor pattern, we can move the operational logic from the objects another class. The benefit of this pattern is that if the logic of operation changes, then we need to make change only in the visitor implementation rether than doing it in all the classes. 
