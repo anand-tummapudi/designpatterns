@@ -11,19 +11,21 @@ public class ChainRespClient {
 		while(true) {
 			 int amount = 0;
 			 try {
-				 System.out.println("Enter Amount");
+				System.out.println("Enter Amount");
 				scanner = new Scanner(System.in);
 				amount = scanner.nextInt();
 				if(amount%100!=0) {
-					System.out.println("Amount should be multiple of 100s");				}
+					System.out.println("Amount should be multiple of 100s");
+					return;
+					}else {
+						atmMachine.getMoneyDispenseChain().dispense(new Currency(amount));
+					}
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}finally {
-				if(scanner!=null) {
-					scanner.close();
-				}
-			}
+			} /*
+				 * finally { if(scanner!=null) { scanner.close(); } }
+				 */
 		}
 	}
 

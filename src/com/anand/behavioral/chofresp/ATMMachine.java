@@ -9,8 +9,12 @@ public class ATMMachine {
 		MoneyDispenseChain moneyDispenseChain2 = new Currency500DispenseChain();
 		MoneyDispenseChain moneyDispenseChain3 = new Currency200DispenseChain();
 		MoneyDispenseChain moneyDispenseChain4 = new Currency100DispenseChain();
-		
-		
 	}
+
+	public MoneyDispenseChain getMoneyDispenseChain() {
+		return moneyDispenseChain;
+	}
+	
+	
 
 }

@@ -103,3 +103,10 @@ This pattern deals with the behaviors of objects. It is used to provide centrali
 #### 4. Chain of responsibility Pattern 
 Chain of responsibility pattern is used to achieve loose coupling in software design where a request from client is passed to a chain of objects to process them. Then the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
 In this pattern client doesn't know which part of chain will be processing the request and it will send the request to the first object in the chain. 
+* multiple catch blocks in switch is best example 
+* java.util.logging.Logger - log()
+* javax.servlet.Filter - doFilter()
+#### 5. Strategy design pattern
+This pattern is used when we have multiple algorithms for a specific task and client decides the actual implementation to be used at run time. Strategy patterns is also known as policy pattern.
+* Collections.sort()
+* javax.servlet.http.HttpServlet - service() and doXXX() methods
