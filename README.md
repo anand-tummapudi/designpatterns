@@ -97,3 +97,9 @@ This patterns is used to create a method stub and that differs some of the steps
 * Spring Framework - JdbcTemplate, HibernateTemplate, JmsTemplate, RestTemplate, SimpleJdbcTemplate, TransactionTemplate
 #### 3. Mediator Pattern 
 This pattern deals with the behaviors of objects. It is used to provide centralized communication medium between different objects in a system. Mediator pattern is used when the communication logic between objects is complex. We can have a central point of communication that takes care of communication logic.
+* java.util.Timer - scheduleXXX() methods.
+* java concurrency Excecutor - execute() method.
+* java.lang.reflect.Method - invoke() method. 
+#### 4. Chain of responsibility Pattern 
+Chain of responsibility pattern is used to achieve loose coupling in software design where a request from client is passed to a chain of objects to process them. Then the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
+In this pattern client doesn't know which part of chain will be processing the request and it will send the request to the first object in the chain. 
