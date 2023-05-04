@@ -111,6 +111,14 @@ This pattern is used when we have multiple algorithms for a specific task and cl
 * Collections.sort()
 * javax.servlet.http.HttpServlet - service() and doXXX() methods
 #### 6. State design pattern
-This pattern is used when an object changes its behavior based on its internal state. The benefit of using state pattern is to implement polymorphic behavior. So that our code will be more robust and easily maintainable.
+This pattern is used when an object changes its behavior based on its internal state. The benefit of using state pattern is to implement polymorphic behavior. So that our code will be more robust and easily maintainable. State patterns are used to implement state machine implementations in complex applications.
+* Example is java thread state. A thread can be in one of its five states during its lifecycle.It's next state can be determined only after getting it's current state.
+* State vs Strategy - Structure of both the patterns are similar. But the intents are different. The strategy pattern provides a better alternative to subclassing. State pattern behavior is encapsulated in separate class. Both the patterns promote the composition and delegation over inheritance. Always try to make state objects singleton.
 #### 7. Visitor design pattern
-This pattern is used when we have to perform an operation on a group of similar kind of objects. With the help of visitor pattern, we can move the operational logic from the objects another class. The benefit of this pattern is that if the logic of operation changes, then we need to make change only in the visitor implementation rether than doing it in all the classes. 
+This pattern is used when we have to perform an operation on a group of similar kind of objects. With the help of visitor pattern, we can move the operational logic from the objects to another class. The benefit of this pattern is that if the logic of operation changes, then we need to make the change only in the visitor implementation rather than doing it in all the classes.
+* javax.lang.model.element.AnnotationValue and AnnotationValueVisitor
+* javax.lang.model.element.Element and ElementVisitor
+* javax.lang.model.type.TypeMirror and TypeVisitor
+* java.nio.file.FileVisitor and SimpleFileVisitor
+#### 8. Command design pattern
+ Rather than executing the business logic directly, convert the logic into a command and the command will execute.
