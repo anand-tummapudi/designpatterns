@@ -88,7 +88,7 @@ Proxy is an object representing another object. It provides a placeholder or sub
 Deals with the interaction or communication between objects. The two objects are talking to each other but still loosely coupled. The loose coupling is the key to n-tier architecture.
 * Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer (Publisher/Subscriber), State, Strategy, Template method, Visitor, Null Object.
 #### 1. Iterator Pattern 
-Iterator pattern is used to access the elements of a collection object on sequential manner without any need to know its underlying representation.
+Iterator pattern is used to access the elements of a collection object on sequential manner without any need to know its underlying representation. Iterator pattern is used in java collections. 
 #### 2. Template Method Pattern 
 This patterns is used to create a method stub and that differs some of the steps of implementation to the subclasses. It defines the steps to execute an algorithm and it can provide default implementation that might be common for all or some of the subclasses.
 * java.io package - all non abstract methods of java.io.InputStream, java.io.OutputStream, java.io.Reader and java.io.Writer
@@ -122,3 +122,8 @@ This pattern is used when we have to perform an operation on a group of similar 
 * java.nio.file.FileVisitor and SimpleFileVisitor
 #### 8. Command design pattern
  Rather than executing the business logic directly, convert the logic into a command and the command will execute.
+ #### 9. Observer design pattern
+ Observer pattern is useful when we are interested in the state of an object and want to get notified whenever there is any change. In this pattern, the object that watch on the state of another object is called observer and the object that is being observed is called the Subject. When one object changes its state, all its dependents are notified and updated automatically.
+ * java.util.Observer and java.util.Observable
+ * javax.servlet.http.HttpSessionBindingListener
+ * javax.servlet.http.HttpSessionAttributeListener
