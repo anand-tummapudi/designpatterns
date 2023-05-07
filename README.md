@@ -123,7 +123,9 @@ This pattern is used when we have to perform an operation on a group of similar 
 * javax.lang.model.type.TypeMirror and TypeVisitor
 * java.nio.file.FileVisitor and SimpleFileVisitor
 #### 8. Command design pattern
- Rather than executing the business logic directly, convert the logic into a command and the command will execute.
+ This pattern is a data driven pattern. It says rather than executing the business logic directly, convert the logic into a command and the command will execute. In this pattern, a request is wrapped under an object as command and passed to invoker object. Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.
+* All implementations of java.lang.Runnable
+* All implementations of javax.swing.Action
 #### 9. Observer design pattern
  Observer pattern is useful when we are interested in the state of an object and want to get notified whenever there is any change. In this pattern, the object that watch on the state of another object is called observer and the object that is being observed is called the Subject. When one object changes its state, all its dependents are notified and updated automatically.
  * java.util.Observer and java.util.Observable
@@ -132,7 +134,4 @@ This pattern is used when we have to perform an operation on a group of similar 
 #### 10. Interpreter design pattern
 This pattern is used to define a grammatical representation for a language and provides an interpreter to deal with this grammer.
 * java.util.Pattern and subclasses of java.text.Format 
-#### 11. Command design pattern
-This pattern is a data driven pattern. In this pattern, a request is wrapped under an object as command and passed to invoker object. Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.
-* All implementations of java.lang.Runnable
-* All implementations of javax.swing.Action
+
