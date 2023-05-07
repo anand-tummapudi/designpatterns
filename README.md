@@ -132,3 +132,7 @@ This pattern is used when we have to perform an operation on a group of similar 
 #### 10. Interpreter design pattern
 This pattern is used to define a grammatical representation for a language and provides an interpreter to deal with this grammer.
 * java.util.Pattern and subclasses of java.text.Format 
+#### 11. Command design pattern
+This pattern is a data driven pattern. In this pattern, a request is wrapped under an object as command and passed to invoker object. Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.
+* All implementations of java.lang.Runnable
+* All implementations of javax.swing.Action
